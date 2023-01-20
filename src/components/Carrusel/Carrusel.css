@@ -11,7 +11,6 @@
   justify-content: center;
   height: 107.53px;
   width: 113px;
-  border-radius: 200px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -44,9 +43,26 @@
   background: linear-gradient(233.16deg, #00B0CE4D -10.31%, rgba(0, 175, 206, 0.274) 110.31%);
   border-radius: 30px;
   padding: 25.9px 30.84px 26.52px 30.22px;
-  transition: all ease 0.3s;
 }
 
 .Carrusel_item.active {
   background: linear-gradient(233.16deg, #00B0CE -10.31%, rgba(0, 176, 206, 0.3) 110.31%);
+}
+
+@media screen and (max-width: 1300px) {
+  .Carrusel_item > img {
+    width: 100px;
+  }
+  .Carrusel_item {
+    background: linear-gradient(233.16deg, #00B0CE4D -10.31%, rgba(0, 175, 206, 0.274) 110.31%);
+    border-radius: 25px;
+  }
+  .Carrusel_buttonPrev, .Carrusel_buttonNext {
+    height: 58px;
+    width: 58px;
+  }
+  .Carrusel_buttonPrev > img, .Carrusel_buttonNext > img {
+    height: 15px;
+    width: 20px;
+  }
 }
