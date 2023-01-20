@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import data from '../data'
 import button_icon from '../../assets/button.png'
-import './Carrusel.css'
+import './Slider.css'
 
-function Carrusel() {
+function Slider() {
 
   const [current, setCurrent] = useState(0)
 
@@ -22,24 +22,24 @@ function Carrusel() {
   }
 
   return (
-    <div className='Carrusel'>
-      <button className='Carrusel_buttonPrev' onClick={handlePrev}>
+    <div className='Slider'>
+      <button className='Slider_buttonPrev' onClick={handlePrev}>
         <img src={button_icon} alt="" />
       </button>
-      <div className='Carrusel_divItems'>
+      <div className='Slider_divItems'>
         {data.map((e, i) => {
           return (
-            <div key={i} className={current === i ? 'Carrusel_item active' : 'Carrusel_item'}>
+            <div key={i} className={current === i ? 'Slider_item active' : 'Slider_item'}>
               <img src={e.proFlight} alt="" />
             </div>
           )
         })}
       </div>
-      <button className='Carrusel_buttonNext' onClick={handleNext}>
+      <button className='Slider_buttonNext' onClick={handleNext}>
         <img src={button_icon} alt="" />
       </button>
     </div>
   )
 }
 
-export default Carrusel
+export default Slider
