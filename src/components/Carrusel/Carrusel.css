@@ -1,0 +1,52 @@
+.Carrusel {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+/* ------- Botones -------*/
+.Carrusel_buttonPrev, .Carrusel_buttonNext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 107.53px;
+  width: 113px;
+  border-radius: 200px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(116.58deg, #00B0CE -47.28%, rgba(0, 176, 206, 0.3) 73.34%);
+  mix-blend-mode: normal;
+  border-radius: 200px;
+}
+.Carrusel_buttonNext {
+  background: linear-gradient(233.16deg, #00B0CE -47.28%, rgba(0, 176, 206, 0.3) 73.34%);
+}
+.Carrusel_buttonPrev:hover {
+  background: linear-gradient(116.58deg, #29ddfc -47.28%, rgba(36, 192, 220, 0.3) 73.34%);
+}
+.Carrusel_buttonNext:hover {
+  background: linear-gradient(233.16deg,  #29ddfc -47.28%, rgba(36, 192, 220, 0.3) 73.34%);
+}
+
+.Carrusel_buttonPrev > img {
+  transform: rotate(180deg);
+  pointer-events: none;
+}
+
+/* ------- Items -------*/
+.Carrusel_divItems {
+  display: flex;
+  gap: 35.51px;
+}
+
+.Carrusel_item {
+  background: linear-gradient(233.16deg, #00B0CE4D -10.31%, rgba(0, 175, 206, 0.274) 110.31%);
+  border-radius: 30px;
+  padding: 25.9px 30.84px 26.52px 30.22px;
+  transition: all ease 0.3s;
+}
+
+.Carrusel_item.active {
+  background: linear-gradient(233.16deg, #00B0CE -10.31%, rgba(0, 176, 206, 0.3) 110.31%);
+}
